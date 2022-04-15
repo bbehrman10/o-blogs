@@ -8,7 +8,7 @@ Visual Builder has a lot of great built-in features that allow developers to fet
 
 - Have your own instance of Visual Builder
 
-- A deployed Smart Contract & Contract ABI Artifact – You can use my HelloWorld sample - 0x06A3F540004A2ba928fcba915D41fF32C084B57b on Ethereum Rinkeby Testnet
+- A deployed Smart Contract & Contract ABI Artifact – You can use my HelloWorld sample - xxxx on Ethereum Rinkeby Testnet
 
 		 pragma  solidity ^0.8.13;
 	
@@ -27,9 +27,9 @@ Visual Builder has a lot of great built-in features that allow developers to fet
 		 - Download & Create Account 
 		 - Add & Configure Rinkeby Testnet - see screenshots below
 		 ![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/metamask1.png?raw=true)
-		 ![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/metamask2.png?raw=true)
-		 
-		 - Faucet test ethereum - when data is changed on the blockchain you need tokens to pay the computing gas fees, on the testnets you need to request faucets for test ethereum - https://faucets.chain.link/
+		 ![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/metamask2.png?raw=true)	
+
+- Faucet test ethereum - when data is changed on the blockchain you need tokens to pay the computing gas fees, on the testnets you need to request faucets for test ethereum - https://faucets.chain.link/
 
 - Import & save Ethers.js JavaScript library into a file locally – [https://cdn.ethers.io/lib/ethers-5.2.esm.min.js](https://cdn.ethers.io/lib/ethers-5.2.esm.min.js)
 
