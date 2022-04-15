@@ -25,8 +25,10 @@ Visual Builder has a lot of great built-in features that allow developers to fet
 
 - [MetaMask browser extension](https://metamask.io/download/)
 		 - Download & Create Account 
-		 - Add & Configure Rinkeby Testnet - add picture
-		 - Faucet test ethereum - when data is changed on the blockchain you need tokens to pay the computing gas fees - add link / picture
+		 - Add & Configure Rinkeby Testnet - see screenshots below
+		 ![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/metamask1.png?raw=true)
+		 ![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/metamask2.png?raw=true)
+		 - Faucet test ethereum - when data is changed on the blockchain you need tokens to pay the computing gas fees, on the testnets you need to request faucets for test ethereum - https://faucets.chain.link/
 
 - Import & save Ethers.js JavaScript library into a file locally – [https://cdn.ethers.io/lib/ethers-5.2.esm.min.js](https://cdn.ethers.io/lib/ethers-5.2.esm.min.js)
 
@@ -35,12 +37,12 @@ STEPS
 ### Import into Visual Builder
 Before we can begind building we need to do a couple if imports. First, we need to import our Ethers.js library. Within your application right click the resources folder and select 'Import'. Navigate to and select the Ether.js file you saved to your computer. We also need to import our ContractABI.json. This file will inform Visual Builder of the structure of inputs & outputs of our contract call and is a required element. Everytime you compile a smart contract locally one of these files is created so each time you update and redeploy a smart contract you will need to update the ABI on your frontend. (This pattern is necessary for both visual builder & standard JavaScript applications). So right click resources again and import the ABI file.
 
-SCREENSHOT
+![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/import.png?raw=true)
 
 ### Create Frontend Components
  For the Visual Builder frontend, I'm keeping it quite simple. We have to main panels. One shows if there is no wallet detected & contains a connect wallet button. And the other panel will contain our buttons to both read & update the smart contract. The panels are configured via a Bind If and display according to whether or not a MetaMask account is connected to our app. I also have setup some variables to store data from the inputs / outputs. 
 
-SCREENSHOT
+![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/frontend.png?raw=true)
 
 ### Load Libraries & Write Javascript Functions
 For this demonstration we are going to be writing 4 separate functions - 2 for interacting with MetaMask and 2 for interacting with our contract. However before we can write the functions we need to tell Visual Builder to use the files we imported earlier. 
@@ -131,10 +133,13 @@ And for our Contract:
 				}
 			}
 ### Link Everything Together:
-Now that we've defined our frontend & functions, all we need to do is tie everything together with a few event listeners and action chains. For each of our buttons head over to the events tab and create a new `click` event and create a new action chain for each event. Within the action chain you will need to drag in the Call JS Function action into the chain and in the drop down select the corresponding function. Lastly make sure you assign the results of the call to your Contract Response variable. For the read function you can juse return the function result. For the set string function I hardcoded a success message. 
+Now that we've defined our frontend & functions, all we need to do is tie everything together with a few event listeners and action chains. For each of our buttons head over to the events tab and create a new `click` event and create a new action chain for each event. Within the action chain you will need to drag in the Call JS Function action into the chain and in the drop down select the corresponding function. Lastly make sure to assign the results of the call to your Contract Response variable. For the read function we return the contract string. For the set string function we return the hash of our transaction.
+![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/actionList.png?raw=true)
+![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/actionChain.png?raw=true)
+![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/stringsResult.png?raw=true)
+![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/hashResults.png?raw=true)
 
 ### Try It Out:
-Everything is set up now we can hit the play button on our application. Test our wallet & contract. 
-
+Everything is set up now we can hit the play button on our application. Test our wallet & contract. Head on over to [Etherscan Rinkeby](https://rinkeby.etherscan.io/address/0x06A3F540004A2ba928fcba915D41fF32C084B57b) to track your transactions as they occur. 
 ### Video Demonstration
 LINK
