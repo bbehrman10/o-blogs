@@ -28,6 +28,7 @@ Visual Builder has a lot of great built-in features that allow developers to fet
 		 - Add & Configure Rinkeby Testnet - see screenshots below
 		 ![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/metamask1.png?raw=true)
 		 ![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/metamask2.png?raw=true)
+		 
 		 - Faucet test ethereum - when data is changed on the blockchain you need tokens to pay the computing gas fees, on the testnets you need to request faucets for test ethereum - https://faucets.chain.link/
 
 - Import & save Ethers.js JavaScript library into a file locally – [https://cdn.ethers.io/lib/ethers-5.2.esm.min.js](https://cdn.ethers.io/lib/ethers-5.2.esm.min.js)
