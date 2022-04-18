@@ -8,7 +8,8 @@ Visual Builder has a lot of great built-in features that allow developers to fet
 
 - Have your own instance of Visual Builder
 
-- A deployed Smart Contract & Contract ABI Artifact – You can use my `HelloWorld.json` sample - 0x06A3F540004A2ba928fcba915D41fF32C084B57b on Ethereum Rinkeby Testnet
+- A deployed Smart Contract & Contract You can use my `HelloWorld` sample - 0x06A3F540004A2ba928fcba915D41fF32C084B57b on Ethereum Rinkeby Testnet
+- Contract Abi for Smart Contract - You can use my `HelloWorld.json` sample
 
 		 pragma  solidity ^0.8.13;
 	
