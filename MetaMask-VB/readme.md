@@ -152,6 +152,6 @@ Make sure to assign the results of the call to the response variable. For the re
 </p>
 
 #### Try It Out:
-Everything is set up now we can hit the play button on our application. Test our wallet & contract. Head on over to [Etherscan Rinkeby](https://rinkeby.etherscan.io/address/0x06A3F540004A2ba928fcba915D41fF32C084B57b) to track your transactions as they occur. 
+Everything is set up now you can hit the play button on the application. Test your wallet & contract. Head on over to [Etherscan Rinkeby](https://rinkeby.etherscan.io/address/0x06A3F540004A2ba928fcba915D41fF32C084B57b) to track transactions as they occur. 
 #### Video Demonstration
 Coming Soon...
