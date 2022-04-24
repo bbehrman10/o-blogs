@@ -36,7 +36,7 @@ Becauase authentication works differently on the blockchain, a wallet is needed 
 <img src="https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/faucet.png?raw=true"/>
 
 ### Don't Want to Build It Yourself? No Problem!
-You can download a fully working sample `MetaMaskVBDemo` and import it into your own instance of Visual Builder. All you'll need to do is configure MetaMask, faucet some test ETH, and test away! 
+You can download a fully working sample `MetaMaskVBDemo` from this repo and import it into your own instance of Visual Builder. All you'll need to do is configure MetaMask, faucet some test ETH, and test away! 
 
 ### Instructions:
 #### Import into Visual Builder
