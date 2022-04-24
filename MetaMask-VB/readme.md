@@ -1,4 +1,4 @@
-# MetaMask, Smart Contracts, & Visual Builder
+# Visual Builder + MetaMask = Smart Contracts
 
 ### A Step by Step Guide to Implementing Smart Contract Calls & MetaMask on Oracle Visual Builder.
 
@@ -34,11 +34,12 @@ Becauase authentication works differently on the blockchain, a wallet is needed 
   <img src="https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/metamask2.png?raw=true" width="49%" /> 
 </p>
 - Faucet test ethereum - when data is changed on the blockchain you need ETH to pay the computing gas fees, this applies to both the mainnet and the testnet. You can request ETH to be sent to your wallet from a faucet - https://faucets.chain.link/
-
 <img src="https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/faucet.png?raw=true"/>
 
-### Instructions:
+### Don't Want to Build It Yourself? No Problem!
+You can download a fully working sample `MetaMaskVBDemo` and import it into your own instance of Visual Builder. All you'll need to do is configure MetaMask, faucet some test ETH, and test away! 
 
+### Instructions:
 #### Import into Visual Builder
 Before we can begind building we need to do a couple if imports. First, we need to import our Ethers.js library. Within your application right click the resources folder and select 'Import'. Upload the `ethers.js` file saved in the repo. Then we also need to import the `HelloWorld.json` file.
 
@@ -49,8 +50,8 @@ Before we can begind building we need to do a couple if imports. First, we need 
 #### Create Frontend Components
  Next create a frontend to interact with the deployed contract. My example has 2 main panels. Panel 1 shows if there is no wallet detected & contains a `Connect Wallet` button. Panel 2 contains buttons to both read & update the smart contract. The panels are configured via a `Bind If` and display according to whether or not a MetaMask account is connected to the application. There are also variables setup to store values from the form & from the contract.
 
-![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/frontend.png?raw=true)
-![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/variables.png?raw=true)
+![frontend](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/frontend.png?raw=true)
+![variables](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/variables.png?raw=true)
 
 #### Load Libraries & Write Javascript Functions
 In this example there are 4 functions - 2 that interact MetaMask and 2 that interact with the smart contract. However before writing these functions, make sure to define & link to both the Ethers.js library, and the contract ABI file.
@@ -139,7 +140,7 @@ And for our Contract:
 			}
 #### Link Everything Together:
 Now that the frontend & functions are defined, all that's left to do is tie everything together with some event listeners and action chains. For each of the buttons head over to the events tab and create a new `click` event and create a new action chain for each event. Within the action chain you will need to drag in the Call JS Function action into the chain and in the drop down select the corresponding function.
-![screenshot](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/actionList.png?raw=true)
+![actions](https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/actionList.png?raw=true)
 <p float="left">
   <img src="https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/connectWallet.png?raw=true" width="35%" />
   <img src="https://github.com/bbehrman10/o-blogs/blob/main/MetaMask-VB/images/readContractString.png?raw=true" width="30%" /> 
