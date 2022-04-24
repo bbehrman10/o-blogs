@@ -1,6 +1,6 @@
 # Visual Builder + MetaMask = Smart Contracts
 
-### A Step by Step Guide to Implementing Smart Contract Calls & MetaMask on Oracle Visual Builder.
+## A Guide to Implementing Smart Contract Calls using MetaMask on Oracle Visual Builder.
 
 Visual Builder has a lot of great built-in features that allow developers to fetch their data from a variety of sources and consume said data in their application frontends via the built-in REST capabilities. However, what if you wanted to build an application that interacts with smart contracts? 
 
