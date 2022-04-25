@@ -3,7 +3,7 @@
 
 Visual Builder has a lot of great built-in features that allow developers to fetch their data from a variety of sources and consume said data in their application frontends via the built-in REST capabilities. However, what if you wanted to build an application that interacts with smart contracts? 
 
-Becauase authentication works differently on the blockchain, a wallet is needed to sign transactions. So... in comes MetaMask; a wallet with capabilities of signing blockchain transactions on a wide variety of networks. When paired with a special JavaScript library an application can utilize MetaMask to send & sign transactions to smart contracts. Let's go through how this is done.
+Wallets are the primary client applications used to sign transactions on the blockchain. Although there are many wallets, I selected MetaMask; a wallet with capabilities of signing blockchain transactions on a wide variety of networks (although primarily intended for Ethereum). When paired with a special JavaScript library an application can utilize MetaMask to send & sign transactions to smart contracts. Let's go through how this is done.
 
 ### In order to follow along you will need the following:
 
